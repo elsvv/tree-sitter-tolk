@@ -1,6 +1,6 @@
 {
   "name": "@tonkite/tree-sitter-tolk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tolk grammar for tree-sitter",
   "license": "MIT",
   "files": [
@@ -17,7 +17,8 @@
     "web-tree-sitter": "^0.24.5"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build:grammar": "cd third_party/tolk-vscode && pnpm install && pnpm grammar:wasm && cp server/tree-sitter-tolk.wasm ../../external/tree-sitter-tolk.wasm"
   },
   "main": "dist/main.js",
   "types": "dist/main.d.ts",

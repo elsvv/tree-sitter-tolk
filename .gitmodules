@@ -1,0 +1,3 @@
+[submodule "third_party/tolk-vscode"]
+	path = third_party/tolk-vscode
+	url = https://github.com/ton-blockchain/tolk-vscode.git
