@@ -1,26 +1,25 @@
 {
-  "name": "@tonkite/tree-sitter-tolk",
-  "version": "0.0.2",
-  "description": "Tolk grammar for tree-sitter",
-  "license": "MIT",
-  "files": [
-    "dist",
-    "external/tree-sitter-tolk.wasm"
-  ],
-  "devDependencies": {
-    "@tsconfig/node18": "^18.2.4",
-    "@types/node": "^22.10.2",
-    "typescript": "^5.7.2",
-    "web-tree-sitter": "^0.24.5"
-  },
-  "peerDependencies": {
-    "web-tree-sitter": "^0.24.5"
-  },
-  "scripts": {
-    "build": "tsc",
-    "build:grammar": "cd third_party/tolk-vscode && pnpm install && pnpm grammar:wasm && cp server/tree-sitter-tolk.wasm ../../external/tree-sitter-tolk.wasm"
-  },
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
-  "packageManager": "pnpm@8.15.6+sha1.8105075ad0aa306138be128c017e9c41e28ecffa"
+    "name": "@eliseev_s/tree-sitter-tolk",
+    "version": "0.99.0",
+    "description": "Tolk grammar for tree-sitter",
+    "license": "MIT",
+    "files": [
+        "dist",
+        "external/tree-sitter-tolk.wasm"
+    ],
+    "devDependencies": {
+        "@tsconfig/node18": "^18.2.4",
+        "@types/node": "^22.10.2",
+        "typescript": "^5.7.2",
+        "web-tree-sitter": "^0.24.5"
+    },
+    "peerDependencies": {
+        "web-tree-sitter": "^0.24.5"
+    },
+    "scripts": {
+        "build": "tsc",
+        "build:grammar": "cd third_party/tolk-vscode && bun install && bun grammar:wasm && cp server/tree-sitter-tolk.wasm ../../external/tree-sitter-tolk.wasm"
+    },
+    "main": "dist/main.js",
+    "types": "dist/main.d.ts"
 }
